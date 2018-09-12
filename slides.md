@@ -27,8 +27,7 @@ The goal of this presentation is to give a very high level overview of the book.
 
 # Overview
 * Why Clean Architecture Matters
-* Software Principles For Architecture
-* Component Principles
+* What is Clean Architecture
 
 ---
 
@@ -60,8 +59,7 @@ most software developers focus on behavior without much thought to the architect
 ---
 
 # What is Clean Architecture
-notes:
-Clean architecture starts with 
+* More than the bricks
 
 ---
 
