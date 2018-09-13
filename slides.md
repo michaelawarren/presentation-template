@@ -13,7 +13,7 @@ theme: night
 
 ---
 
-# Source
+## Source
 Robert Martin's Clean Architecture
 
 note:
@@ -25,13 +25,13 @@ The goal of this presentation is to give a very high level overview of the book.
 
 ---
 
-# Overview
+## Overview
 * Why Clean Architecture Matters
 * What is Clean Architecture
 
 ---
 
-# Why Clean Architecture Matters
+## Why Clean Architecture Matters
 * Cost of Poor Architecture
 * The Two values
 
@@ -47,7 +47,7 @@ The author points out that he has worked on projects where the architecture is c
 
 ----
 
-# The Tale of two values
+## The Tale of two values
 * Behavior
 * Architecture
 
@@ -58,14 +58,67 @@ most software developers focus on behavior without much thought to the architect
 
 ---
 
-# What is Clean Architecture
-* More than the bricks
+## What is Clean Architecture
+* SOLID
+* Component Cohesion
+* Component Coupling
+
+----
+
+## SOLID
+
+----
+
+## Component Cohesion
+### The Reuse/Release Equivalence Principle
+
+----
+
+## Component Cohesion
+
+
+----
+
+### The Common Closure Principle
+
+----
+
+### The Common Reuse Principle
+
+----
+
+### Tension diagram
+
+----
+
+## Component Coupling
+
+----
+
+### The Acyclic Dependencies Principle
+> Allow no cycles in the component dependency graph
+
+----
+
+### The Stable Dependencies Principles
+> Depend in the direction of stability
+
+> I = Fan-out / (Fan-in + Fan-out)
+
+----
+
+### The Stable Abstraction Principle
+> A component should be as abstract as it is stable
+
+----
+
+### The Zone of Pain and Uselessness
 
 ---
 
-# Questions
+## Questions
 
 ---
 
-# feedback
+## feedback
 insert link to feedback survey
