@@ -30,3 +30,6 @@ Want to export it to static html and a pdf for people without internet connectio
 * black
 * league
 * white
+
+## presenter notes
+Press the »S« key on your keyboard to open the notes window.
