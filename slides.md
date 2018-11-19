@@ -125,10 +125,18 @@ The author says "make sense" but the next two principles help compensate for thi
 notes: Release = validation, testing, code reviews. Why test the hole app when only a portion is deployed.
 The single responsibility principle restated for components.
 keeping changes into one component reduces the effort in releases and deploys.
+"Gather together those things that change at the same times for the same reasons. Separate those things that change at different times or for different reasons"
 
 ----
 
 ### The Common Reuse Principle
+> Don't Force the users of a component to depend on things they don't need.
+
+note: Classes and modules that tend to be reused together belong in the same module
+What classes belong and don't belong in the component
+When a change occurs to a used component a change to the using component might occur. At the least revalidation of the using component has to occur even if the change to the used component doesn't affect the using component.
+Interface Segregation Principle for components
+Don't depend on what you don't need.
 
 > Don't force users of a component to depend on things they don't need
 
@@ -145,6 +153,9 @@ notes:
 ![image here](./images/tention-diagram.png)
 <!-- .element height="400px" .element style="border: 0; background: None; box-shadow: None" -->
 
+note:
+the three principles don't always live in harmony. A balance has to be made between them.
+
 ---
 
 ## Component Coupling
@@ -153,6 +164,9 @@ notes:
 
 ### The Acyclic Dependencies Principle
 > Allow no cycles in the component dependency graph
+
+note:
+components are a solution to the problem of multiple people working on the same product. It 
 
 ----
 
