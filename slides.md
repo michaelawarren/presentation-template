@@ -27,7 +27,7 @@ Robert Martin's Credentials
 * Author
 * decades of experience as a software engineer in many diverse fields
 
-The goal of this presentation is to give a very high level overview of the book. It is not meant to be a deep dive into practical application but a taste to give you a desire to want more.
+The goal of this presentation is to give a very high level overview of some of the principles introduced in the book. It is not meant to be a deep dive into practical application but a taste to give you a desire to want more.
 
 ---
 
@@ -35,6 +35,8 @@ The goal of this presentation is to give a very high level overview of the book.
 * Architecture VS Design
 * Why Clean Architecture Matters
 * What is Clean Architecture
+
+
 
 ---
 
