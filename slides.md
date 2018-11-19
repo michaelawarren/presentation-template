@@ -87,8 +87,12 @@ most software developers focus on behavior without much thought to the architect
 * Dependency Inversion  Principle
 
 note: try not to spend to much time on solid. Most are familiar with it be brief on this slide and the nest few.
-Good architecture requires us to use good building materials. Just like if you build a building of poor materials it doesn't really matter how great the architecture is. 
+Good architecture requires us to use good building materials. Just like if you build a building of poor materials it doesn't really matter how great the architecture is.
 These principles are expanded upon in future chapters/slides so we'll cover their architecture analog briefly.
+
+---
+
+## What is a components
 
 ---
 
@@ -114,14 +118,27 @@ The author says "make sense" but the next two principles help compensate for thi
 Note: Release = validation, testing, code reviews. Why test the hole app when only a portion is deployed.
 The single responsibility principle restated for components.
 keeping changes into one component reduces the effort in releases and deploys.
+"Gather together those things that change at the same times for the same reasons. Separate those things that change at different times or for different reasons"
 
 ----
 
 ### The Common Reuse Principle
+> Don't Force the users of a component to depend on things they don't need.
+
+note: Classes and modules that tend to be reused together belong in the same module
+What classes belong and don't belong in the component
+When a change occurs to a used component a change to the using component might occur. At the least revalidation of the using component has to occur even if the change to the used component doesn't affect the using component.
+Interface Segregation Principle for components
+Don't depend on what you don't need.
 
 ----
 
 ### Tension diagram
+
+
+
+note:
+the three principles don't always live in harmony. A balance has to be made between them.
 
 ---
 
@@ -131,6 +148,9 @@ keeping changes into one component reduces the effort in releases and deploys.
 
 ### The Acyclic Dependencies Principle
 > Allow no cycles in the component dependency graph
+
+note:
+components are a solution to the problem of multiple people working on the same product. It 
 
 ----
 
