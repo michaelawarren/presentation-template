@@ -38,7 +38,10 @@ The goal of this presentation is to give a very high level overview of the book.
 
 ---
 
-## Architecture VS Design
+### Architecture VS Design
+
+![image here](./images/house-blue-print.jpg)
+<!-- .element height="500px" .element style="border: 0; background: None; box-shadow: None" -->
 
 notes: 
 The author points out that while Architecture typically refers to High level while design is typically used in reference to lower level. However he suggests this differentiation is nonsense they are the same.
@@ -51,9 +54,10 @@ The author points out that while Architecture typically refers to High level whi
 
 ----
 
-## Cost of Poor Architecture
+### Cost of Poor Architecture
 
-insert charts from book
+![image here](./images/charts.png)
+<!-- .element height="500px" .element style="border: 0; background: None; box-shadow: None" -->
 
 notes:
 This is where i want to show the charts in the book about the project that after 8 release cycles the project's productivity plateau even though the number of developers on the project continues to increase.
@@ -68,14 +72,16 @@ The author points out that he has worked on projects where the architecture is c
 notes:
 Behavior is what the system does
 Architecture is making the system easy to change
-most software developers focus on behavior without much thought to the architecture of the system
+some software developers focus on behavior without much thought to the architecture of the system. There is business value to both.
 
 ---
 
 ## What is Clean Architecture
-* SOLID
-* Component Cohesion
-* Component Coupling
+* Software Design Principle
+    * SOLID
+* Component Design Principles
+    * Component Cohesion
+    * Component Coupling
 
 ---
 
@@ -86,13 +92,16 @@ most software developers focus on behavior without much thought to the architect
 * Interface Segregation Principle
 * Dependency Inversion  Principle
 
-notes: try not to spend to much time on solid. Most are familiar with it be brief on this slide and the nest few.
-Good architecture requires us to use good building materials. Just like if you build a building of poor materials it doesn't really matter how great the architecture is. 
+for a deeper dive watch: https://www.youtube.com/watch?v=_ahSBkSOyzQ
+
+notes: try not to spend to much time on solid. Most are familiar with it be brief on this slide and the next few.
+
+* Good architecture requires us to use good building materials. Just like if you build a building of poor materials it doesn't really matter how great the architecture is. 
 These principles are expanded upon in future chapters/slides so we'll cover their architecture analog briefly.
 
 ---
 
-## What is a Component
+## What is a Component?
 
 notes:
 * unit of deployment
@@ -122,7 +131,7 @@ The author says "make sense" but the next two principles help compensate for thi
 
 > Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.
 
-notes: Release = validation, testing, code reviews. Why test the hole app when only a portion is deployed.
+Notes: Release = validation, testing, code reviews. Why test the hole app when only a portion is deployed.
 The single responsibility principle restated for components.
 keeping changes into one component reduces the effort in releases and deploys.
 "Gather together those things that change at the same times for the same reasons. Separate those things that change at different times or for different reasons"
@@ -130,21 +139,20 @@ keeping changes into one component reduces the effort in releases and deploys.
 ----
 
 ### The Common Reuse Principle
+
 > Don't Force the users of a component to depend on things they don't need.
 
-note: Classes and modules that tend to be reused together belong in the same module
+
+Notes: Classes and modules that tend to be reused together belong in the same module
 What classes belong and don't belong in the component
 When a change occurs to a used component a change to the using component might occur. At the least revalidation of the using component has to occur even if the change to the used component doesn't affect the using component.
 Interface Segregation Principle for components
 Don't depend on what you don't need.
 
-> Don't force users of a component to depend on things they don't need
-
-notes:
 * if you have to much or to little in your component it makes it difficult to reuse
 * cue am-ws-lib soap box
 * classes are not typically reused in isolation
-* 
+ 
 
 ----
 
@@ -153,7 +161,7 @@ notes:
 ![image here](./images/tention-diagram.png)
 <!-- .element height="400px" .element style="border: 0; background: None; box-shadow: None" -->
 
-note:
+notes:
 the three principles don't always live in harmony. A balance has to be made between them.
 
 ---
@@ -165,8 +173,9 @@ the three principles don't always live in harmony. A balance has to be made betw
 ### The Acyclic Dependencies Principle
 > Allow no cycles in the component dependency graph
 
-note:
-components are a solution to the problem of multiple people working on the same product. It 
+notes:
+components are a solution to the problem of multiple people working on the same product.
+Clearwater is good at a portion of this.
 
 ----
 
@@ -175,14 +184,41 @@ components are a solution to the problem of multiple people working on the same 
 
 > I = Fan-out / (Fan-in + Fan-out)
 
+notes:
+
 ----
 
 ### The Stable Abstraction Principle
 > A component should be as abstract as it is stable
 
+> A = Num abstract classes / Num classes
+
+notes:
+* stable should be abstract so that stability doesn't prevent extensibility.
+
 ----
 
-### The Zone of Pain and Uselessness
+#### The Zone of Pain and Uselessness
+
+![image here](./images/abstract-stability-chart.png)
+<!-- .element height="400px" .element style="border: 0; background: None; box-shadow: None" -->
+
+notes: continuation from the previous slide
+
+---
+### The Clean Architecture
+
+![image here](./images/the clean architecture.png)
+<!-- .element  .element style="border: 0; background: None; box-shadow: None" -->
+
+notes: what all of this is driving towards is this The clean architecture.
+* Independent of frameworks
+* testable
+* independent of ui
+* independent of database
+* independent of anyexternal agency
+Not going into much more detail in this presentation partially because i haven't studied this part.
+wrap up
 
 ---
 
