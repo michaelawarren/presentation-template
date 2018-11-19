@@ -50,7 +50,7 @@ The author points out that while Architecture typically refers to High level whi
 
 ---
 
-## Why Clean Architecture Matters
+## Why Clean Does Architecture Matters?
 * Cost of Poor Architecture
 * The Two values
 
@@ -78,7 +78,7 @@ some software developers focus on behavior without much thought to the architect
 
 ---
 
-## What is Clean Architecture
+## What is Clean Architecture?
 * Software Design Principle
     * SOLID
 * Component Design Principles
