@@ -224,9 +224,5 @@ wrap up
 
 ---
 
-## Questions
-
----
-
-## feedback
+## Questions / Feedback
 https://www.surveymonkey.com/r/MBJP8CY
