@@ -219,7 +219,7 @@ notes: what all of this is driving towards is this The clean architecture.
 * testable
 * independent of ui
 * independent of database
-* independent of anyexternal agency
+* independent of any external agency
 Not going into much more detail in this presentation partially because i haven't studied this part.
 wrap up
 
