@@ -153,7 +153,7 @@ Interface Segregation Principle for components
 Don't depend on what you don't need.
 
 * if you have to much or to little in your component it makes it difficult to reuse
-* cue am-ws-lib soap box
+* cue large dependency that depends on everything soap box
 * classes are not typically reused in isolation
  
 
